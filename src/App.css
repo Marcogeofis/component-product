@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+:root{
+    --gris :#A5BECC;
+    --azul-oscuro :#243A73;
+    --morado :#7C3E66;
+    --morado-clorado:#F2EBE9;
+}   
+*{
+    margin:0;   
+    padding:0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body{
+    font-size: 62.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--gris);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.moob-store{
+    font-size: 2.5rem;
+    color: var(--azul-oscuro);
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding: 5px 0;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-products{
+    display: flex;
 }
